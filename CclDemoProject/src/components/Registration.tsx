@@ -4,16 +4,17 @@ import { View, Text, StyleSheet } from 'react-native';
 export const Registration = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Registration</Text>
+      <Text style={styles.text}> Ambar raaaaaaaaaaaaaaaa</Text>
+
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,               // take full screen
-    justifyContent: 'center', // center vertically
-    alignItems: 'center',     // center horizontally
+    flex: 1,              
+    justifyContent: 'center', 
+    alignItems: 'center',     
     backgroundColor: '#f5f5f5',
   },
   text: {
