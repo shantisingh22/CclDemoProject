@@ -3,5 +3,5 @@ export const CustomStyle = {
   white: '#ffffff',
   radius: 14,
   font: 16,
-  padding: 14,
+  padding: 50,
 };

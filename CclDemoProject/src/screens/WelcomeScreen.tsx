@@ -18,7 +18,7 @@ export default function WelcomeScreen() {
       <View style={WelcomeScreenStyles.bottom}>
         <Text style={WelcomeScreenStyles.programTitle}>Curiosity Program</Text>
         <Text style={WelcomeScreenStyles.programSubtitle}>Let's Get in!</Text>
-        <View style={WelcomeScreenStyles.underline} />
+        <View style={WelcomeScreenStyles.underline}/>
 
         <TouchableOpacity style={WelcomeScreenStyles.registerButton}>
           <Text style={WelcomeScreenStyles.registerText}>Register</Text>
