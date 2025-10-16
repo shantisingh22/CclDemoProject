@@ -12,8 +12,8 @@ const WelcomeScreenStyles = StyleSheet.create({
     marginTop: 40,
   },
   logo: {
-    width: 90,
-    height: 90,
+    width: 80,
+    height: 80,
     borderRadius: 100,
     marginTop: 40,
     marginBottom: 16,
