@@ -1,6 +1,3 @@
-
-
-
 import { StyleSheet } from 'react-native';
 import { CustomStyle } from './CustomStyle';
 
@@ -20,18 +17,22 @@ const UniqueCodeScreen = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: CustomStyle.padding,
   },
-  logo: {
-    width: 35,
-    height: 35,
-    borderRadius: CustomStyle.radius,
+  logo1: {
+    width: 58,
+    height: 58,
+    marginLeft:30,
+    borderRadius: 50,
   },
   headerTitle: {
     fontSize: CustomStyle.font + 4,
-    fontWeight: '700',
     color: CustomStyle.white,
   },
   headerSub: {
-    fontSize: CustomStyle.font,
+    fontSize: 12,
+    color: CustomStyle.white,
+  },
+   headerSub1: {
+    fontSize: 10,
     color: CustomStyle.white,
   },
 
@@ -42,13 +43,28 @@ const UniqueCodeScreen = StyleSheet.create({
     borderTopRightRadius: CustomStyle.radius,
     paddingHorizontal: CustomStyle.padding,
     paddingTop: CustomStyle.padding / 2,
+    marginTop:10,
   },
 
+  uniquetext:{ 
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    width:250,
+    marginTop:30,
+},
+
+logoBox: {
+    width: 20,
+    height: 20,
+  },
   back: {
-    fontSize: 26,
-    color: '#333',
+    fontSize: 30,
+    width: 20,
+    height: 20,
+    fontFamily:"bold",
     marginTop: 6,
   },
+  
   pageTitle: {
     fontSize: CustomStyle.font + 10,
     fontWeight: '700',
@@ -57,19 +73,26 @@ const UniqueCodeScreen = StyleSheet.create({
   },
 
   banner: {
-    marginTop: 14,
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#f2f7fb',
-    borderRadius: CustomStyle.radius,
-    paddingVertical: 10,
-    paddingHorizontal: 12,
-  },
+  marginTop: 14,
+  flexDirection: 'row', 
+  borderRadius: 12,
+  alignItems: 'center',  
+  justifyContent: 'center',
+  backgroundColor: 'whitesmoke',
+  paddingVertical: 5,
+  height: 50,
+  paddingHorizontal: 12,
+},
+
+mainBox:{
+    borderRadius: 10,
+    marginLeft:25,
+    marginRight:25,
+},
   bannerIcon: {
     width: 28,
     height: 28,
     borderRadius: 14,
-    backgroundColor: '#e4eef7',
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: 8,
@@ -77,25 +100,31 @@ const UniqueCodeScreen = StyleSheet.create({
   bannerText: {
     flex: 1,
     color: '#3b3b3b',
+    alignItems: 'center',
     fontSize: CustomStyle.font,
   },
   bannerArrow: {
     color: CustomStyle.primary,
     fontSize: 30,
-    marginLeft:8,
+    marginRight:20,
+    width: 32,
+    fontFamily:"bold",
   },
 
   fieldLabel: {
-    marginTop: 22,
+    marginTop: 40,
     marginBottom: 8,
     color: 'black',
     fontWeight: '600',
+    marginLeft:10,
     fontSize: CustomStyle.font,
   },
 
   otpRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    marginRight:40,
+    marginTop:8,
   },
   otpBox: {
     width: 37,
