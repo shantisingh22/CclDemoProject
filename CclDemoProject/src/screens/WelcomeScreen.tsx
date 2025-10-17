@@ -1,8 +1,12 @@
 import React from 'react';
 import { View, Text, Image, SafeAreaView, TouchableOpacity } from 'react-native';
 import WelcomeScreenStyles from '../styles/WelcomeScreen';
+import { useNavigation } from "@react-navigation/native";
 
-export default function WelcomeScreen() {
+
+const WelcomeScreen: React.FC = () => {
+    const navigation = useNavigation<any>();
+
   return (
     <SafeAreaView style={WelcomeScreenStyles.container}>
       <View style={WelcomeScreenStyles.top}>
@@ -18,16 +22,20 @@ export default function WelcomeScreen() {
       <View style={WelcomeScreenStyles.bottom}>
         <Text style={WelcomeScreenStyles.programTitle}>Curiosity Program</Text>
         <Text style={WelcomeScreenStyles.programSubtitle}>Let's Get in!</Text>
-        <View style={WelcomeScreenStyles.underline}/>
+        <View style={WelcomeScreenStyles.underline} />
 
-        <TouchableOpacity style={WelcomeScreenStyles.registerButton}>
+        <TouchableOpacity style={WelcomeScreenStyles.registerButton}
+          onPress={() => navigation.navigate("SelectSchool")} >
           <Text style={WelcomeScreenStyles.registerText}>Register</Text>
         </TouchableOpacity>
-
-        <TouchableOpacity style={WelcomeScreenStyles.loginButton}>
+''
+        <TouchableOpacity style={WelcomeScreenStyles.loginButton}
+        >
           <Text style={WelcomeScreenStyles.loginText}>Login</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
-}
+};
+
+export default WelcomeScreen;
