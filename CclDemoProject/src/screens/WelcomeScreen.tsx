@@ -28,7 +28,6 @@ const WelcomeScreen: React.FC = () => {
           onPress={() => navigation.navigate("SelectSchool")} >
           <Text style={WelcomeScreenStyles.registerText}>Register</Text>
         </TouchableOpacity>
-''
         <TouchableOpacity style={WelcomeScreenStyles.loginButton}
         >
           <Text style={WelcomeScreenStyles.loginText}>Login</Text>

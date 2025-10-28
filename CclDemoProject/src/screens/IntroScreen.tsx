@@ -1,7 +1,10 @@
 import React from "react";
-import { SafeAreaView, View, Text, Image, Pressable } from "react-native";
+import {View, Text, Image, Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import styles from "../styles/Intro";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+
 
 const IntroScreen: React.FC = () => {
   const navigation = useNavigation<any>();

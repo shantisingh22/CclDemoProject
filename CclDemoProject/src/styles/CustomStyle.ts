@@ -2,7 +2,7 @@
 // 
 
 export const CustomStyle = {  
-  primary: '#1098d6',
+  primary: "#00BFFF",
   white: '#ffffff',
   radius: 14,
   font: 16,
@@ -18,6 +18,8 @@ export const COLORS = {
   muted: "#6B7280",
   line: "#E5E7EB",
   banner: "#F1F5F9",
+  BLUE: '#1AA7E8',
+  WHITE : '#FFFFFF',
 } as const;
 
 export const RADII = { sm: 8, md: 12, lg: 16 } as const;
