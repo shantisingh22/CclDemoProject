@@ -40,26 +40,4 @@ const RegisterSuccessScreen: React.FC = () => {
 export default RegisterSuccessScreen;
 
 
-// import React from 'react';
-// import { SafeAreaProvider } from 'react-native-safe-area-context';
-// import { View, Text } from 'react-native';
-// import RegisterSuccessScreen from '../screens/RegisterSuccessScreen';
-// // import { BASE_WIDTH, BASE_HEIGHT } from '@env';  
-
-// // console.log('Base Width:', BASE_WIDTH);
-// // console.log('Base Height:', BASE_HEIGHT);
-
-// export default function App() {
-//   return (
-//     <SafeAreaProvider>
-//       <View>
-//         {/* <Text>Base Width: {BASE_WIDTH}</Text>
-//         <Text>Base Height: {BASE_HEIGHT}</Text> */}
-//       </View>
-//       <RegisterSuccessScreen />
-//     </SafeAreaProvider>
-//   );
-// }
-
-
 

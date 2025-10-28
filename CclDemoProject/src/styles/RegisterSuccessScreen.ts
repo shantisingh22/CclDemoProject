@@ -1,8 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { COLORS } from './CustomStyle';
 import {scale, verticalScale, moderateScale } from 'react-native-size-matters/extend';
-// const height_factor = 680/917;
-// const width_factor = 350/412;
 
 const createStyles = () =>
   StyleSheet.create({
@@ -18,7 +16,7 @@ const createStyles = () =>
 
     imageContainer: {
       alignItems: 'center',
-      marginTop: verticalScale(328),  //328
+      marginTop: verticalScale(328),  
       width: scale(128),
       aspectRatio: 128/88,
     },
