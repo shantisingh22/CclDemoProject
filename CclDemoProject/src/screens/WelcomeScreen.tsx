@@ -1,39 +1,41 @@
 import React from 'react';
-import { View, Text, Image, SafeAreaView, TouchableOpacity } from 'react-native';
-import WelcomeScreenStyles from '../styles/WelcomeScreen';
-import { useNavigation } from "@react-navigation/native";
-
+import { View, Text, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import LogoBanner from './LogoBanner';
+import styles from '../styles/WelcomeScreen';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const WelcomeScreen: React.FC = () => {
-    const navigation = useNavigation<any>();
+  const navigation = useNavigation<any>();
 
   return (
-    <SafeAreaView style={WelcomeScreenStyles.container}>
-      <View style={WelcomeScreenStyles.top}>
-        <Image
-          source={require('../assets/images/logo.png')}
-          style={WelcomeScreenStyles.logo}
-          resizeMode="contain"
-        />
-        <Text style={WelcomeScreenStyles.title}>The Center for Creative Learning</Text>
-        <Text style={WelcomeScreenStyles.subtitle}>IIT Gandhinagar</Text>
-      </View>
 
-      <View style={WelcomeScreenStyles.bottom}>
-        <Text style={WelcomeScreenStyles.programTitle}>Curiosity Program</Text>
-        <Text style={WelcomeScreenStyles.programSubtitle}>Let's Get in!</Text>
-        <View style={WelcomeScreenStyles.underline} />
+      <View style={styles.container}>
+        <View style={styles.logoContainer}>
+          <LogoBanner />
+        </View>
 
-        <TouchableOpacity style={WelcomeScreenStyles.registerButton}
-          onPress={() => navigation.navigate("SelectSchool")} >
-          <Text style={WelcomeScreenStyles.registerText}>Register</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={WelcomeScreenStyles.loginButton}
-        >
-          <Text style={WelcomeScreenStyles.loginText}>Login</Text>
-        </TouchableOpacity>
+        <View style={styles.bottomContainer}>
+          <View style={styles.textContainer}>
+            <Text style={styles.programTitle}>Curiosity Program</Text>
+            <Text style={styles.programSubtitle}>Let's Get in!</Text>
+          </View>
+
+          <View style={styles.buttonContainer}>
+            <TouchableOpacity
+              style={styles.registerButton}
+              onPress={() => navigation.navigate('RegSuccess')}
+            >
+              <Text style={styles.registerText}>Register</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.loginButton}>
+              <Text style={styles.loginText}>Login</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
       </View>
-    </SafeAreaView>
+   
   );
 };
 

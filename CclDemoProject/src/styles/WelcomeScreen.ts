@@ -1,81 +1,109 @@
 import { StyleSheet } from 'react-native';
 import { CustomStyle } from './CustomStyle';
+import { scale, verticalScale,moderateScale} from 'react-native-size-matters/extend';
+console.log(CustomStyle.factor)
 
-const WelcomeScreenStyles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: CustomStyle.primary,
-    justifyContent: 'space-between',
   },
-  top: {
+  
+  logoContainer: {
+    marginTop: scale(106),
+    marginBottom: scale(106),
+    backgroundColor: CustomStyle.primary,
     alignItems: 'center',
-    marginTop: 40,
   },
-  logo: {
-    width: 80,
-    height: 80,
-    borderRadius: 100,
-    marginTop: 40,
-    marginBottom: 16,
-  },
-  title: {
-    color: '#fff',
-    fontSize: 20,
-    fontWeight: '600',
-  },
-  subtitle: {
-    color: '#fff',
-    fontSize: 16,
-  },
-  bottom: {
+
+  bottomContainer: {
     backgroundColor: '#fff',
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-    paddingVertical: 90,
+    borderTopLeftRadius:20 ,
+    borderTopRightRadius: 20 ,
     alignItems: 'center',
   },
-  programTitle: {
-    fontSize: 25,
-    fontWeight: '700',
-    marginBottom: 5,
-    color: '#333',
+
+  textContainer: {
+    marginTop: scale(104),
   },
+
+  programTitle: {
+    fontSize: 28,
+    fontWeight: '700',
+    color: '#2B353A',
+    lineHeight: 33.6,
+    fontFamily: 'Tangerine',
+    textAlign: 'center',
+    fontStyle: 'normal',
+  },
+
   programSubtitle: {
     fontSize: 16,
-    marginBottom: 12,
-    color: '#333',
+    color: '#2B353A',
+    fontWeight: '600',
+    lineHeight: 22.4,
+    textAlign: 'center',
+    fontFamily: 'Quicksand',
+    marginTop: scale(16),
+    fontStyle: 'normal',
   },
+
+  buttonContainer: {
+    marginTop: scale(153), 
+    marginBottom:scale(104)
+  },
+
   registerButton: {
-    backgroundColor: '#1098d6',
-    borderRadius: 10,
-    paddingVertical: 15,
-    paddingHorizontal: 112,
-    marginBottom: 15,
+    borderRadius: 8,
+    backgroundColor: '#189BD7',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 1,
   },
+
   registerText: {
-    color: '#fff',
-    fontWeight: '700',
-    fontSize: 16,
+    paddingTop: scale(17),
+    paddingBottom: scale(14),
+    paddingLeft: scale(111),
+    paddingRight: scale(111),
+    fontStyle: 'normal',
+    color: '#F6F6F6',
+    fontWeight: '600',
+    lineHeight:25.2,
+    fontSize: 18,
+    fontFamily: 'Quicksand',
   },
+
+
   loginButton: {
-    borderColor: '#1098d6',
+    borderRadius:8,
+    backgroundColor: '#FFF',
+    marginTop: scale(9),
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 1,
     borderWidth: 2,
-    borderRadius: 10,
-    paddingVertical: 12,
-    paddingHorizontal: 120,
+    borderColor: '#189BD7'
   },
+
   loginText: {
-    fontWeight: '700',
-    fontSize: 16,
+    paddingTop: scale(17),
+    paddingBottom: scale(14),
+    paddingLeft: scale(111),
+    paddingRight: scale(111),
+    fontStyle: 'normal',
+    color: 'black',
+    fontWeight: '600',
+    lineHeight: scale(25.2),
+    fontSize: 18,
+    fontFamily: "Quicksand",
+
   },
-
-  underline: {
-  width: 80,     
-  height: 1,      
-  backgroundColor: 'lightgray',
-  marginBottom: 130,    
-  borderRadius: 1,
-},
-
+ 
 });
-export default WelcomeScreenStyles;
+
+export default styles;
+
